@@ -9,3 +9,9 @@
 </ul>
 
 <my-hero [hero]="selected"></my-hero>
+<div *ngIf="selected != null">
+    <h2>
+      {{ selected.name | uppercase }} is my hero
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+</div>
