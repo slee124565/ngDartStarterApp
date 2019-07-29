@@ -23,6 +23,11 @@ class HeroComponent implements OnActivate {
     return id == null ? null : int.tryParse(id);
   }
 
+  Future<void> save() async {
+    await _heroService.update(hero);
+    goBack();
+  }
+
   void goBack() => _location.back();
 
   @override

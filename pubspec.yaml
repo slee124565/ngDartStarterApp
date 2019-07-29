@@ -12,6 +12,8 @@ dependencies:
   angular_components: ^0.13.0
   angular_forms:
   angular_router:
+  http:
+  stream_transform:
 
 dev_dependencies:
   angular_test: ^2.3.0
