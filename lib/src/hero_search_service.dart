@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart';
 import 'hero.dart';
+
 class HeroSearchService {
   final Client _http;
   HeroSearchService(this._http);
